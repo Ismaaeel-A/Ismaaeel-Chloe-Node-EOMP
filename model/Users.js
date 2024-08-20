@@ -129,7 +129,7 @@ class Users{
     async loginUser(req, res){
         try {
             const { emailAdd, userPass } = req.body
-            const strQry = `SELECT firstName, lastName, userAge, gender, userRole, emailAdd, userPass, userProfile FROM Users WHERE userID = ${userPass};`
+            const strQry = `SELECT firstName, lastName, userAge, gender, userRole, emailAdd, userPass, userProfile FROM Users WHERE emailAdd = '${emailAdd}';`
 
             db.query(strQry, async (err, result) => {
                 if (err) throw new Error('Failed to log in.')
@@ -139,7 +139,7 @@ class Users{
                         msg: 'You provided an invalid email. Create an account to use this email'
                     })
                 } else {
-                    const isValidPass = await compare(pwd, result[0].pwd)
+                    const isValidPass = await compare(userPass, result[0].userPass)
                     if (isValidPass) {
                         const token = createToken({
                             emailAdd,
