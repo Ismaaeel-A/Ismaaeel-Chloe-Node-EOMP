@@ -1,5 +1,6 @@
 <template>
-    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="sticky-top">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="nav-logo" href="#">
           <img
@@ -59,6 +60,7 @@
         </div>
       </div>
     </nav>
+  </div>
   </template>
   
   <script>
