@@ -5,17 +5,19 @@
     <main>
       <router-view />
     </main>
-    <!-- Footer -->
+    <FooterComp class="fixed-bottom"/>
   </div>
-  </nav>
+</nav>
 </template>
 <script>
 import NavBarComp from '@/components/NavBarComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
 
 // import HomeView from '@/views/HomeView.vue'
 export default{
   components:{
     NavBarComp,
+    FooterComp
   }
 }
 </script>
