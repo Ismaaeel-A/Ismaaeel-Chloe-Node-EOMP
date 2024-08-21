@@ -26,7 +26,7 @@ class Products {
             const strQry = `SELECT prodID, prodName, prodDescription, prodIngredients, quantity, amount, Category, prodUrl FROM Products WHERE prodID = ${req.params.id};`
 
             db.query(strQry, (err, result) => {
-                if (err) throw new Error(`Unable to fetch user`);
+                if (err) throw new Error(`Unable to fetch Product`);
                 res.json({
                     status: res.statusCode,
                     result: result[0]
