@@ -1,8 +1,9 @@
 import path from 'path'
+import cors from 'cors' 
 import { productRouter } from './controller/ProductController.js'
 import { userRouter, express } from './controller/UserController.js'
 import { errorHandling } from './middleware/ErrorHandling.js'
-import cors from 'cors' 
+
 
 //CREATE AN EXPRESS APP
 const app = express()
@@ -33,7 +34,6 @@ app.get('^/$|/EOMP', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    
     res.json({
         status: 404,
         err: 'Resource not found.'
