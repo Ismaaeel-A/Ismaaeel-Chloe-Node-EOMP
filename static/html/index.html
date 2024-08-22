@@ -3,9 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>API</title>
 </head>
 <body>
     <h2>NODE EOMP API</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HTTP Methods</th>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>/</td>
+                <td>Fetches landing/home page</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HTTP Method</th>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>/users</td>
+                <td>Fetches all Users data</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/users/:id</td>
+                <td>Fetches corresponding user's data to id specified</td>
+            </tr>
+            <tr>
+                <td>POST</td>
+                <td>/users/register</td>
+                <td>Adds a new user</td>
+            </tr>
+            <tr>
+                <td>PATCH</td>
+                <td>/users/update/:id</td>
+                <td>Updates corresponding user to id specified</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/users/delete/:id</td>
+                <td>Deletes corresponding user to id specified</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>HTTP Method</th>
+                <th>Path</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GET</td>
+                <td>/products</td>
+                <td>Fetches all Products</td>
+            </tr>
+            <tr>
+                <td>GET</td>
+                <td>/products/:id</td>
+                <td>Fetches corresponding product to id specified</td>
+            </tr>
+
+            <tr>
+                <td>POST</td>
+                <td>/products/addProduct</td>
+                <td>Adds a new product</td>
+            </tr>
+            <tr>
+                <td>PATCH</td>
+                <td>/products/update/:id</td>
+                <td>Updates corresponding product to id specified</td>
+            </tr>
+            <tr>
+                <td>DELETE</td>
+                <td>/products/delete/:id</td>
+                <td>Deletes corresponding product to id specified</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
 </body>
 </html>
