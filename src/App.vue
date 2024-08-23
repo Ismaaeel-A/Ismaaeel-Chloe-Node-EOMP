@@ -1,5 +1,5 @@
 <template>
-  <!-- <nav>
+  <nav>
     <div class="wrapper">
       <NavBarComp/>
       <main>
@@ -7,10 +7,8 @@
     </main>
     <FooterComp class=""/>
   </div>
-</nav> -->
-<NavBarComp/>
-<router-view />
-<FooterComp class=""/>
+</nav>
+
 </template>
 <script>
 import NavBarComp from '@/components/NavBarComp.vue'
