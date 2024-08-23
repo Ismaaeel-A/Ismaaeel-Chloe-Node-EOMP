@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AdminView from '../views/AdminView.vue'
 import ProductView from '../views/ProductView.vue'
 import ContactView from '../views/ContactView.vue'
-
+import SingleCardView from '../views/SingleCardView.vue';
 
 const routes = [
   {
@@ -23,6 +23,11 @@ const routes = [
     path: '/product',
     name: 'product',
     component: ProductView
+  },
+  {
+    path: '/product/:id',
+    name: 'singleProduct',
+    component: SingleCardView
   },
   {
     path: '/contact',

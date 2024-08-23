@@ -102,7 +102,7 @@ export default {
   justify-content: center;
   padding-top: 2vh;
   padding-bottom: 2vw;
-  gap: 4em;
+  gap: 3vw;
 }
 
 .supplements{
