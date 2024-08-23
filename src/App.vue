@@ -1,13 +1,16 @@
 <template>
-  <nav>
+  <!-- <nav>
     <div class="wrapper">
       <NavBarComp/>
-    <main>
+      <main>
       <router-view />
     </main>
     <FooterComp class=""/>
   </div>
-</nav>
+</nav> -->
+<NavBarComp/>
+<router-view />
+<FooterComp class=""/>
 </template>
 <script>
 import NavBarComp from '@/components/NavBarComp.vue'
