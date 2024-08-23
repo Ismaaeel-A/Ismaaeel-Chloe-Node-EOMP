@@ -32,7 +32,7 @@
               class="nav-link"
               :class="{ active: activeLink === 'product' }"
               to="/product"
-              @click="setActive('product')"
+              @click="setActive('product') && collapseNavbar()"
               >Product</router-link
             >
             <router-link
@@ -74,6 +74,16 @@
       setActive(link) {
         this.activeLink = link;
       },
+      collapseNavbar() {
+      if (window.innerWidth < 992) {
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click();
+        }
+      }
+    }
+  
     },
   };
   </script>
