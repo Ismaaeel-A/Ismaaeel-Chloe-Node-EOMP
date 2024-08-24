@@ -9,8 +9,8 @@
                 <h4 class="card-title">{{ product.prodName }}</h4>
               </div>
               <h4 class="card-price">R{{ product.amount }}</h4>
-              <router-link :to="{ name: 'product', params: { id: product.productID } }">
-                <a href="#" class="btn btn-primary">View More</a>
+              <router-link :to="{ name: 'singleProduct', params: { id: product.prodID } }">
+                <button class="btn btn-primary">View More</button>
               </router-link>
             </center>
           </div>

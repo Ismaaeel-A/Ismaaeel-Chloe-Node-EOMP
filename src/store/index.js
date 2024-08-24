@@ -2,6 +2,8 @@ import { createStore } from 'vuex';
 import axios from 'axios';
 import { toast } from 'vue3-toastify';
 import "vue3-toastify/dist/index.css";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
 const URL = 'https://ismaaeel-chloe-node-eomp.onrender.com/'
 export default createStore({
   state: {

@@ -27,7 +27,7 @@ const routes = [
   {
     path: '/product/:id',
     name: 'singleProduct',
-    component: SingleCardView
+    component: SingleCardView,
   },
   {
     path: '/contact',
