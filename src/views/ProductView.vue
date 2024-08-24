@@ -1,7 +1,7 @@
 <template>
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div id="grad1" class="carousel-item active" data-bs-interval="10000">
+      <div id="grad1" class="carousel-item active" data-bs-interval="3000">
         <img id="sup-image" src="https://chlowus.github.io/Nodejs.pictures/pillimage.png" class="d-block w-100" alt="...">
         <div class="content-wrapper">
           <h1 class="sup-text centered-text">Supplements</h1>
@@ -14,7 +14,7 @@
           </button>
         </div>
       </div>
-      <div id="grad2" class="carousel-item" data-bs-interval="2000">
+      <div id="grad2" class="carousel-item" data-bs-interval="3000">
         <img id="nf-image" src="https://chlowus.github.io/Nodejs.pictures/NFimage.png" class="d-block w-100" alt="...">
         <div class="content-wrapper">
           <h1 class="natf-text centered-text">Natural Foods</h1>
@@ -27,7 +27,7 @@
           </button>
         </div>
       </div>
-      <div id="grad3" class="carousel-item">
+      <div id="grad3" class="carousel-item" data-bs-interval="3000" >
         <img id="f-image" src="https://chlowus.github.io/Nodejs.pictures/Fimage.png" class="d-block w-100" alt="...">
         <div class="content-wrapper">
           <h1 class="fit-text centered-text">Fitness</h1>
